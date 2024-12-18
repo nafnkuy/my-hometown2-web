@@ -1,0 +1,183 @@
+body {
+    background: #fef7e1;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #004964;
+    color: #f1c100;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+nav ul li a:active {
+    background-color: #888;
+}
+
+nav ul li a:focus {
+    outline: 2px solid #ffeb39;
+}
+
+main {
+    padding: 20px;
+    justify-content: center;
+    
+    font-family: 'Kodchasan', sans-serif;
+}
+
+main article {
+    text-align: center;
+}
+
+main h2 {
+    color: #10278f;
+    padding: 10px 0;
+    font-family: 'Kodchasan', sans-serif;
+}
+
+img {
+    width: 80vw;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #004964;
+    color: #fff;
+    text-align: center;
+    padding: 0.5vh;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Kodchasan', sans-serif;
+}
+
+main p {
+    width: 80vw;
+    max-width: 1000px;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 20px auto;
+    font-size: 16px;
+}
+
+/* Hamburger Menu */
+.ham-menu {
+    display: none; /* ซ่อนปุ่มในหน้าจอใหญ่ */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25px;
+    width: 40px;
+    position: absolute; /* ให้ปุ่ม Hamburger อยู่ขวามือ */
+    right: 20px; /* ระยะห่างจากขอบขวา */
+    top: 45px; /* ระยะห่างจากขอบบน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ham-menu div {
+    background-color: #fff;
+    height: 4px;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+/* เมนู */
+.menu {
+    display: flex; /* แสดงเมนูแนวนอนในหน้าจอใหญ่ */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+}
+
+/* ซ่อนเมนูในหน้าจอเล็ก */
+@media (max-width: 768px) {
+    .ham-menu {
+        display: flex; /* แสดงปุ่ม Hamburger */
+    }
+
+    .menu {
+        display: none; /* ซ่อนเมนูเริ่มต้น */
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background-color: #004964;
+        padding: 10px 0;
+    }
+
+    .menu.active {
+        display: flex; /* แสดงเมนูเมื่อกดปุ่ม Hamburger */
+    }
+
+    .menu li {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+/* สำหรับเมนูในหน้าจอใหญ่ */
+@media (min-width: 769px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+    }
+
+    .ham-menu {
+        display: none; /* ซ่อนปุ่ม Hamburger ในหน้าจอใหญ่ */
+    }
+}
