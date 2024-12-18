@@ -53,3 +53,9 @@ main h2 {
     padding: 10px 0;
     font-family: 'Kodchasan', sans-serif;
 }
+img {
+    width: 80vw;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+}
