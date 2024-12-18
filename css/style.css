@@ -38,3 +38,18 @@ nav ul li a:active {
 nav ul li a:focus {
     outline: 2px solid #ffeb39;
 }
+main {
+    padding: 20px;
+    justify-content: center;
+    font-family: 'Kodchasan', sans-serif;
+}
+
+main article {
+    text-align: center;
+}
+
+main h2 {
+    color: #10278f;
+    padding: 10px 0;
+    font-family: 'Kodchasan', sans-serif;
+}
