@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hometown - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Please contact us here</h1>
+        <nav>
+                <ul class="menu" id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="details.html">Details</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>แบบฟอร์มติดต่อ</h2>
+            <form action="/submit" method="POST">  
+                <div class="form-group">  
+                    <label for="fullname">ชื่อ-นามสกุล *</label>  
+                    <input type="text" id="fullname" name="fullname" required>  
+                </div>  
+                
+                <div class="form-group">  
+                    <label for="email">อีเมล *</label>  
+                    <input type="email" id="email" name="email" required>  
+                </div>  
+                
+                <div class="form-group">  
+                    <label for="tel">เบอร์โทรศัพท์</label>  
+                    <input type="tel" id="tel" name="tel">  
+                </div>  
+                
+                <div class="form-group">  
+                    <label for="message">ข้อความ *</label>  
+                    <textarea id="message" name="message" required></textarea>  
+                </div>  
+                
+                <button type="submit">ส่งข้อความ</button>  
+            </form>
+        </section>
+        <br/><br/>
+    </main>
+    <footer>
+        <p>&copy; 2024 จังหวัดชลบุรี</p>
+    </footer>
+</body>
+</html>
